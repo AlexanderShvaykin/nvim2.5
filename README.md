@@ -4,9 +4,9 @@
 - So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
 - So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
 
-https://github.com/NvChad/NvChad
-https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
-https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/mappings.lua
+- https://github.com/NvChad/NvChad
+- https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
+- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/mappings.lua
 
 # Credits
 
