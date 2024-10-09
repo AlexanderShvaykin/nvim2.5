@@ -16,5 +16,6 @@ end, { desc = "buffer goto prev" })
 map("n", "<C-p>", function()
   require("nvchad.tabufline").prev()
 end, { desc = "buffer goto prev" })
+map("n", "<leader>fw", "<cmd>Telescope live_grep_args<CR>", { desc = "telescope live grep" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
