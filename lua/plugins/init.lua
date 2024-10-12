@@ -17,13 +17,25 @@ return {
     enabled = true,
     lazy = false,
   },
+  -- {
+  --   "Exafunction/codeium.vim",
+  --   config = function ()
+  --     vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+  --     vim.keymap.set('i', '<C-f>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+  --     vim.keymap.set('i', '<C-d>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+  --     vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+  --   end,
+  --   lazy = false,
+  -- },
   {
-    "Exafunction/codeium.vim",
+    "supermaven-inc/supermaven-nvim",
     config = function ()
-      vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-      vim.keymap.set('i', '<C-f>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
-      vim.keymap.set('i', '<C-d>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
-      vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+      require("supermaven-nvim").setup({
+        keymaps = {
+          accept_suggestion = "<C-g>",
+        }
+
+      })
     end,
     lazy = false,
   },
